@@ -1,0 +1,346 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'kubh sans',sans-serif;
+}
+
+.navbar{
+	background: black;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.ncontainer{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	z-index: 1;
+	width:100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+#nlogo{
+	background-color: #10d0f6;
+	background-image: linear-gradient(to top,#08c1ff 0%, #ffb1 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 2rem;
+	margin-right: 400px;
+}
+
+.fa-logo{
+	margin-right: 0.5rem;
+}
+.nmenu{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+}
+
+.nlinks{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 0 1rem;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	line-height: 80px;
+	position: relative;
+}
+
+.nbutton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7 1rem;
+	width: 100%;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 100%;
+	width: %;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background: white;
+	color: black;
+}
+.button:hover{
+	background: #36affb;
+	transition: all 0.3s ease;
+}
+
+.nlinks:hover{
+	color: #08c1ff;
+	transition: all 0.3s ease;
+}
+
+/**PHONE MEDIA**/
+@media screen and (max-width:90px) 
+{
+.ncontainer{
+display: flex;
+justify-content: space-between;
+height: 80px;
+z-index:1;
+width: 100%;
+max-width: 1300px;
+padding: 0;
+}
+
+.nmenu{
+	display: grid;
+	grid-template-columns: auto;
+	margin: 0;
+	width: 100%;
+	position: absolute;
+
+}
+}
+
+
+/***HERO SECTION**/
+.main{
+	background-color: black;
+}
+
+.maincontainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items:center;
+	justify-self: center;
+	margin: 0 auto;
+	height: 90vh;
+	background-color: black;
+	z-index: 1;
+	width: 100%;
+	max-width: 1300px;
+	padding: 0 50px;
+}
+
+.maincontent h1{
+	font-size: 4rem;
+	background-color: #08c1ff;
+	background-image: linear-gradient(to top,#08c1ff 0%,  rgba(7, 246, 103, 0.885) 100%) ;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color:transparent;
+}
+.maincontent h2{
+	font-size: 2rem;
+	background-color: #08c1ff;
+	background-image: linear-gradient(to top,#08c1ff 0%, rgba(7, 246, 103, 0.885) 100%) ;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color:transparent;
+}
+
+.maincontent p{
+	margin-top: 2rem;
+	font-size: 22px;
+	font-weight: 700;
+	color: bisque;
+}
+.mainbtn{
+	font-size: 1rem;
+	background-image: linear-gradient(to top,#08c1ff 0%, rgba(7, 246, 103, 0.885) 100%) ;
+	padding: 14px 32px;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	margin-top: 2rem;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.35s;
+}
+
+.mainbtn a{
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-decoration: none;
+}
+
+.mainbtn:after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #6cfacd;
+	transition: all 0.35s;
+	border-radius: 4px;
+}
+.mainbtn:hover{
+	color: white;
+}
+
+.mainbtn:hover:after{
+	width: 100%;
+}
+
+.main__img--container{
+	text-align: center;
+}
+
+#main__img{
+	height: 80%;
+	width: 80%;
+}
+
+/**game section**/
+
+.gamesec{
+	background: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.gamesec h1{
+	background-color: #08c1ff;
+	background-image: linear-gradient(to top,#08c1ff 0%, rgba(7, 246, 103, 0.885) 100%);
+	background-color: 100%;
+	margin-bottom: 5rem;
+	font-size: 2.5rem;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color:transparent;
+}
+
+.gamecontainer{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gamecard{
+	margin: 1rem;
+	height: 525px;
+	width: 400px;
+	border-radius: 4px;
+	background-image: linear-gradient(to bottom, 
+	rgba(0, 0, 0, 0)0%,
+	rgba(17,17,17,0.6)100%), 
+	url('/images/gamingimg2.jpg'); 
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+
+.gamecard:nth-child(2){
+	background-image: linear-gradient( to bottom, 
+	rgba(0, 0, 0, 0)0%,
+	rgba(17,17,17,0.6)100%), 
+	url('/images/gamingimg1.jpg'); 
+}
+
+.gamesec h2{
+	position: absolute;
+	top: 350px;
+	left: 30px;
+}
+
+.gamecard p{
+	position: absolute;
+	top: 400px;
+	left: 30px;
+	font-size: 15px;
+}
+
+.gamecard button{
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background: #08c1ff;
+	position: absolute;
+	top: 460px;
+	left: 30px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.gamecard:hover{
+	transform: scale(1.075);
+	transition: 0.2s ease-in;
+}
+
+/**SUb cards**/
+
+.container{
+	background-color: black ;
+	display: flex;
+	justify-content: center;
+	flex: wrap;
+}
+
+.card{
+	background: #08c1ff;
+	width: 320px;
+	height: 450px;	
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.cardimage{
+	height: 340px;
+	margin-bottom: 15px;
+	background-size: cover;
+}
+.sub-1{
+	background-image: url('/images/sub1.jpg');
+}
+.sub-2{
+	background-image: url('/images/sub2.jpg');
+}
+.sub-3{
+	background-image: url('/images/sub3.jpg');
+}
+.sub-4{
+	background-image: url('/images/sub4.jpg');
+}
+
+.card h2{
+	text-align: center;
+}
+.card p{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 12px;
+}
+.card:hover{
+	transform: scale(1.075);
+	transition: 0.2s ease-in;
+}
